@@ -12,7 +12,7 @@ env:
   # NB! Rember to change the name. 
   # The name should start with your github username or organization (e.g. dhis2-chap) 
   # followed by a slash and then the image name (here r_test_image)
-  IMAGE_NAME: "dhis2-chap/r_test_image"
+  IMAGE_NAME: "dhis2-chap/docker_for_epidemia"
 
 # There is a single job in this workflow. It's configured to run on the latest available version of Ubuntu.
 jobs:
