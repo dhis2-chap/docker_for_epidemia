@@ -19,6 +19,3 @@ RUN R -e 'r = getOption("repos"); r["CRAN"] = "http://cran.us.r-project.org"; op
 RUN R -e 'r = getOption("repos"); r["CRAN"] = "http://cran.us.r-project.org"; options(repos = r); install.packages(c("remotes"), repos=c(getOption("repos"), dep=TRUE))'
 RUN R -e 'r = getOption("repos"); r["CRAN"] = "http://cran.us.r-project.org"; options(repos = r); library(remotes); remotes::install_github("ecograph/epidemiar@v3.1.1", build = TRUE, build_opts = c("--no-resave-data", "--no-manual"))'
 RUN R -e 'r = getOption("repos"); r["CRAN"] = "http://cran.us.r-project.org"; options(repos = r); install.packages(c("tsibble"), repos=c(getOption("repos"), dep=TRUE))'
-
-
-
